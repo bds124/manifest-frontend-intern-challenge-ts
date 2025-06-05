@@ -14,7 +14,7 @@ export default function Button({
   state = 'active',
   children,
   onClick
-}: ButtonProps) {
+}: Readonly<ButtonProps>) {
   const base = styles.base;
 
   const variantClass = styles[`${variant}-${state}`];

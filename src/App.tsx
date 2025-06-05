@@ -1,4 +1,4 @@
-import ButtonShowcase from './components/button/buttonGallery/buttonGallery';
+import ButtonShowcase from './components/buttonGallery/buttonGallery';
 import './index.css'
 
 function App() {
