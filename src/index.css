@@ -13,21 +13,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  /* Added to center content horizontally and vertically within the viewport */
+  justify-content: center;
+  align-items: center;
   min-width: 320px;
   min-height: 100vh;
+  /* Allow content to wrap if it gets too wide */
+  flex-wrap: wrap; 
 }
 
 h1 {
@@ -46,23 +41,20 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+
+.header {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; /* This centers items horizontally within the header */
+  /* Added margin: 0 auto; to horizontally center the block element itself */
+  margin: 2rem auto; 
+  max-width: 90%; /* Optional: limit header width to prevent it from spanning too wide on large screens */
+  text-align: center; /* Ensures text inside the header is centered */
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.alert{
+  font-size: x-large;
+  border-bottom: 1px solid #ccc;
+  width: 100%; /* Ensure alert takes full width within its container if desired */
+  text-align: center; /* Center text within the alert itself */
 }
