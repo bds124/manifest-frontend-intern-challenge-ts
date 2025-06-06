@@ -16,12 +16,10 @@
 body {
   margin: 0;
   display: flex;
-  /* Added to center content horizontally and vertically within the viewport */
   justify-content: center;
   align-items: center;
   min-width: 320px;
   min-height: 100vh;
-  /* Allow content to wrap if it gets too wide */
   flex-wrap: wrap; 
 }
 
@@ -45,16 +43,15 @@ button {
 .header {
   display: flex;
   flex-direction: column; 
-  align-items: center; /* This centers items horizontally within the header */
-  /* Added margin: 0 auto; to horizontally center the block element itself */
+  align-items: center; 
   margin: 2rem auto; 
-  max-width: 90%; /* Optional: limit header width to prevent it from spanning too wide on large screens */
-  text-align: center; /* Ensures text inside the header is centered */
+  max-width: 90%; 
+  text-align: center; 
 }
 
 .alert{
   font-size: x-large;
   border-bottom: 1px solid #ccc;
-  width: 100%; /* Ensure alert takes full width within its container if desired */
-  text-align: center; /* Center text within the alert itself */
+  width: 100%; 
+  text-align: center; 
 }
